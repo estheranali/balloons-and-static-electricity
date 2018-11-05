@@ -1,5 +1,5 @@
 {
-  "comment": "# balloons-and-static-electricity 1.5.0-pdomTransform.2 Mon Nov 05 2018 15:33:15 GMT-0500 (Eastern Standard Time)",
+  "comment": "# balloons-and-static-electricity 1.5.0-pdomTransform.3 Mon Nov 05 2018 17:52:06 GMT-0500 (Eastern Standard Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -9,7 +9,7 @@
     "branch": "master"
   },
   "balloons-and-static-electricity": {
-    "sha": "d06cecbc36b42ab67905f0e30c10faa75b805af9",
+    "sha": "87be943d6204967e121f290ea1e869fbd5e8af90",
     "branch": "pdomTransform"
   },
   "brand": {
@@ -65,7 +65,7 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "ad8474d852c0231291ddef797e70ebb0daa8d649",
+    "sha": "c9bf41d26f03b875187077ae29632b405a6e2eee",
     "branch": "pdom-transform"
   },
   "scenery-phet": {
