@@ -262,8 +262,9 @@ define( function( require ) {
         // if already touching a boundary when dragging starts, announce an indication of this
         if ( self.attemptToMoveBeyondBoundary( event.keyCode ) ) {
           var attemptedDirection = self.getAttemptedMovementDirection( event.keyCode );
-          utteranceQueue.addToBack( new Utterance( self.describer.movementDescriber.getTouchingBoundaryDescription( attemptedDirection ), {
-            typeId: 'boundaryAlert'
+          utteranceQueue.addToBack( new Utterance( {
+            alert: self.describer.movementDescriber.getTouchingBoundaryDescription( attemptedDirection ),
+            uniqueGroupId: 'boundaryAlert'
           } ) );
         }
       }
@@ -335,7 +336,7 @@ define( function( require ) {
       self.keyboardDragHandler._dragBounds = self.getDragBounds();
     } );
 
-    // when the "Grab Balloon" button is pressed, focus the dragable node and set to dragged state
+    // when the "Grab Balloon" button is pressed, focus the draggable node and set to dragged state
     balloonImageNode.addAccessibleInputListener( {
       click: function( event ) {
 
@@ -458,8 +459,9 @@ define( function( require ) {
       utteranceQueue.clear();
 
       // Send a custom alert, depending on where the balloon was moved to
-      var utterance = new Utterance( this.describer.movementDescriber.getJumpingDescription( center ), {
-        typeId: 'jumpingDescription' // prevent a spam of these jumping alerts
+      var utterance = new Utterance( {
+        alert: this.describer.movementDescriber.getJumpingDescription( center ),
+        uniqueGroupId: 'jumpingDescription' // prevent a spam of these jumping alerts
       } );
       utteranceQueue.addToBack( utterance );
 

@@ -15,6 +15,7 @@ define( function( require ) {
   var BASEA11yStrings = require( 'BALLOONS_AND_STATIC_ELECTRICITY/balloons-and-static-electricity/BASEA11yStrings' );
   var BASEConstants = require( 'BALLOONS_AND_STATIC_ELECTRICITY/balloons-and-static-electricity/BASEConstants' );
   var BASEQueryParameters = require( 'BALLOONS_AND_STATIC_ELECTRICITY/balloons-and-static-electricity/BASEQueryParameters' );
+  var BooleanToggleNode = require( 'SUN/BooleanToggleNode' );
   var HBox = require( 'SCENERY/nodes/HBox' );
   var Image = require( 'SCENERY/nodes/Image' );
   var inherit = require( 'PHET_CORE/inherit' );
@@ -27,7 +28,6 @@ define( function( require ) {
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var Text = require( 'SCENERY/nodes/Text' );
-  var BooleanToggleNode = require( 'SUN/BooleanToggleNode' );
   var TwoSceneSelectionNode = require( 'BALLOONS_AND_STATIC_ELECTRICITY/balloons-and-static-electricity/view/TwoSceneSelectionNode' );
   var utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
   var VBox = require( 'SCENERY/nodes/VBox' );
@@ -213,7 +213,7 @@ define( function( require ) {
       oneBalloonIcon,
       twoBalloonIcon,
       {
-        // TODO: (phet-io event stream) The 'fired' event for this tandem doesn't make sense with a 'value' of boolean in the parameters.
+        // TODO: (phet-io data stream) The 'fired' event for this tandem doesn't make sense with a 'value' of boolean in the parameters.
         tandem: tandem.createTandem( 'showSecondBalloonSelector' ),
         maskFill: BASEConstants.backgroundColorProperty,
         ariaLabel: twoBalloonExperimentLabelString,
