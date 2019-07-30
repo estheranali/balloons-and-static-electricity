@@ -177,7 +177,10 @@ define( function( require ) {
     } );
 
     // @public {boolean} - whether or not the balloon is on the sweater
-    this.onSweaterProperty = new Property( false );
+    this.onSweaterProperty = new BooleanProperty( false, {
+      tandem: tandem.createTandem( 'onSweaterProperty' ),
+      phetioReadOnly: true
+    } );
 
     // @public {boolean} - whether or not the balloon is touching the wall
     this.touchingWallProperty = new Property( false );
