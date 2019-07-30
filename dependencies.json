@@ -1,16 +1,16 @@
 {
-  "comment": "# balloons-and-static-electricity 1.5.0-dev.7 Wed Jul 24 2019 17:47:20 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# balloons-and-static-electricity 1.5.0-instrumentOnSweaterProperty.0 Tue Jul 30 2019 15:02:30 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "201c50a840e082354b013f4ab9e9d45006f98cfe",
     "branch": "master"
   },
   "axon": {
-    "sha": "3f0943a68952c903024c190a43e4f3b9033e8c4e",
+    "sha": "be798da10a2363114198e9d56d70417e5f10a944",
     "branch": "master"
   },
   "balloons-and-static-electricity": {
-    "sha": "5edbf759e7921ba9cbcda2a6d68b3d4b0086de9e",
-    "branch": "master"
+    "sha": "9ab2a5f639abcab314a60799849bcd72f1ea942c",
+    "branch": "instrumentOnSweaterProperty"
   },
   "brand": {
     "sha": "40dd405ec950d10e15e957cbda3d97362e925bef",
@@ -25,7 +25,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "bc34f32825887fd749a79714c8226203b300d9f8",
+    "sha": "5f34031879d29a55583398dc0dc3bdcd651aef17",
     "branch": "master"
   },
   "kite": {
@@ -33,11 +33,11 @@
     "branch": "master"
   },
   "phet-core": {
-    "sha": "30264b9e3edcadccdcc75364d383c69d23702529",
+    "sha": "cb04d560db80d98f1a4c42460f015a6442e90c1d",
     "branch": "master"
   },
   "phet-io": {
-    "sha": "8f13a2492252dbc7345b98049c2bdc825cda2410",
+    "sha": "34b581c4106625082369457881195b6aa3028592",
     "branch": "master"
   },
   "phet-io-wrappers": {
@@ -45,7 +45,7 @@
     "branch": "master"
   },
   "phetcommon": {
-    "sha": "cd2b5a798e166ad762f3c987e0255002f0ce8980",
+    "sha": "b82ae2142fe0874561941895a4b36ce6f91428b9",
     "branch": "master"
   },
   "phetmarks": {
@@ -57,11 +57,11 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "4bacaff0b97a0eb6713f3e68410d8620cdaf15a1",
+    "sha": "3bf29595fc9f2042a808090621af03869f547fbe",
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "10a1eab2fe6f5bb7bc657613d443acc9f473e009",
+    "sha": "68d449e9455c172f1e81a0210ddac83c32997b26",
     "branch": "master"
   },
   "sherpa": {
@@ -69,15 +69,15 @@
     "branch": "master"
   },
   "sun": {
-    "sha": "2956714d4645a2cffb6f87d2c6dbd545599d2843",
+    "sha": "2bad4675ac72bc1674b4429e2d74520e97d38ed4",
     "branch": "master"
   },
   "tambo": {
-    "sha": "46e369d657d01af403c31d5f2c54a0f3e0486224",
+    "sha": "a24cd90e8c244978ec0c777793cbf144be08b8e4",
     "branch": "master"
   },
   "tandem": {
-    "sha": "fad9ad855558634c64ef9f7a72089f7d97cd3d4f",
+    "sha": "85de02ebdcbb4b3fcd80ab6b7969f80cb0a4b73d",
     "branch": "master"
   },
   "vibe": {
