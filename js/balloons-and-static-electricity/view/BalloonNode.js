@@ -28,6 +28,7 @@ define( function( require ) {
   var KeyboardDragListener = require( 'SCENERY/listeners/KeyboardDragListener' );
   var KeyboardUtil = require( 'SCENERY/accessibility/KeyboardUtil' );
   var Line = require( 'SCENERY/nodes/Line' );
+  var Pointer = require( 'SCENERY/input/Pointer' );
   var MinusChargeNode = require( 'BALLOONS_AND_STATIC_ELECTRICITY/balloons-and-static-electricity/view/MinusChargeNode' );
   var MovableDragHandler = require( 'SCENERY_PHET/input/MovableDragHandler' );
   var Node = require( 'SCENERY/nodes/Node' );
@@ -83,7 +84,7 @@ define( function( require ) {
     this.model = model;
     this.globalModel = globalModel;
 
-    // a11y - a type that generates descriptions for the balloon 
+    // a11y - a type that generates descriptions for the balloon
     this.describer = new BalloonDescriber( globalModel, globalModel.wall, model, accessibleLabelString, otherAccessibleLabelString );
 
     // @private - the utterance to be sent to the utteranceQueue when a jumping action occurs
@@ -130,6 +131,10 @@ define( function( require ) {
       endDrag: function() {
         endDragListener();
       },
+
+      // both balloons can be dragged at once, don't allow zoom during this
+      intent: Pointer.Intent.MULTI_DRAG,
+
       tandem: tandem.createTandem( 'dragHandler' )
     } );
 
@@ -235,7 +240,7 @@ define( function( require ) {
 
         // if already touching a boundary when dragging starts, announce an indication of this
         if ( self.attemptToMoveBeyondBoundary( event.domEvent.keyCode ) ) {
-          const attemptedDirection = self.getAttemptedMovementDirection( event.domEvent.keyCode );  
+          const attemptedDirection = self.getAttemptedMovementDirection( event.domEvent.keyCode );
           boundaryUtterance.alert = self.describer.movementDescriber.getTouchingBoundaryDescription( attemptedDirection );
           utteranceQueue.addToBack( boundaryUtterance );
         }
@@ -256,7 +261,7 @@ define( function( require ) {
       grabCueOptions: {
         centerTop: balloonImageNode.centerBottom.plusXY( 0, 10 )
       },
-      
+
       grabbableOptions: {
         descriptionContent: grabBalloonHelpString,
         appendDescription: true
